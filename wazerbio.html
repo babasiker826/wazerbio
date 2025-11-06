@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAZER - Ölümsüz Sesci</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/0Q9s7R8/1000047343.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ff0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        .info-section {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            border-left: 4px solid #ff0000;
+        }
+
+        .info-title {
+            font-size: 1.4rem;
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+
+        .friends-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .friend-item {
+            background-color: rgba(50, 50, 50, 0.7);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .friend-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(70, 70, 70, 0.9);
+        }
+
+        .special-friend {
+            background-color: rgba(255, 0, 0, 0.3);
+            border: 2px solid #ff0000;
+            font-weight: bold;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #aaa;
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 3px solid #ff0000;
+            background-color: rgba(40, 40, 40, 0.6);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .music-info {
+            text-align: center;
+            margin-top: 20px;
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .friends-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Gizli müzik çalar */
+        .hidden-audio {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WAZER DENKSİZ</h1>
+            <div class="subtitle">2020 ~ 2025</div>
+            <div class="tagline">ÖLÜMSÜZ SESCİ 🇷🇺</div>
+            <div class="tagline">İLAH DÜŞMANI</div>
+            <div class="subtitle">@Suikastciniz</div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-title">Hakkında</div>
+            <p>FEAR WAZER>
+        </div>
+
+        <div class="quote">
+            "WAZER~SANALINIZIN AMINI GÖTÜNÜ SİKEYİM"
+        </div>
+
+        <div class="info-section">
+            <div class="info-title">DOSTLAR</div>
+            <div class="friends-list">
+                <div class="friend-item special-friend">SUSTURULMAZ MALBORO</div>
+                <div class="friend-item">502 NABİ(KARDEŞİM) </div>
+                <div class="friend-item">RÜZGAR RANDY </div>
+
+                <div class="friend-item">FLEX EFSANESİ</div>
+                <div class="friend-item">KÜRT PASHA</div>
+                <div class="friend-item">KÜRT DECCAL (WANSY)</div>
+                <div class="friend-item">SALVO (ZEYC)</div>
+                <div class="friend-item">WHIISAID FURKAN</div>
+                <div class="friend-item">WOLZEE</div>
+                <div class="friend-item">WAXER ATEŞ</div>
+                <div class="friend-item">MORFİN EMRE</div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-title">WAZER DENKSİZ</div>
+            <p style="text-align: center; font-size: 1.5rem;">👍</p>
+        </div>
+
+        <div class="music-info">
+            Belki Yakında...
+        </div>
+
+        <div class="footer">
+            WAZER - Ölümsüz Sesci | 2020-2025
+        </div>
+    </div>
+
+    <!-- Gizli müzik çalar -->
+    <audio id="music1" class="hidden-audio" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="music2" class="hidden-audio" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Müzik çalma kontrolü
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio1 = document.getElementById('music1');
+            const audio2 = document.getElementById('music2');
+
+            // Sayfa yüklendiğinde müzikleri başlat
+            setTimeout(function() {
+                audio1.play().catch(function(error) {
+                    console.log('İlk müzik otomatik çalma engellendi: ', error);
+                });
+
+                // İkinci müziği biraz gecikmeli başlat
+                setTimeout(function() {
+                    audio2.play().catch(function(error) {
+                        console.log('İkinci müzik otomatik çalma engellendi: ', error);
+                    });
+                }, 1000);
+            }, 500);
+
+            // Sayfaya tıklandığında müzikleri başlat
+            document.addEventListener('click', function() {
+                audio1.play().catch(function(error) {
+                    console.log('Müzik çalınamadı: ', error);
+                });
+                audio2.play().catch(function(error) {
+                    console.log('Müzik çalınamadı: ', error);
+                });
+            });
+
+            // Müzik seslerini ayarla
+            audio1.volume = 0.7;
+            audio2.volume = 0.7;
+        });
+    </script>
+</body>
